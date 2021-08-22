@@ -59,7 +59,7 @@ class ViewController: UIViewController {
                
             } catch {
                 
-                print("failed to decode \(error)")
+                print("failed to decode! \(error)")
                 
             }
             
