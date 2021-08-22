@@ -49,7 +49,7 @@ class ViewController: UIViewController {
             
             data, response, error in
             
-            guard let theData = data, error == nil else { print ("error \(error)"); return }
+            guard let theData = data, error == nil else { print ("error! \(error)"); return }
             
             var result: theResponse?
             
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
                 guard let theResult = result else { return }
                 
                 self.userName.text = theResult.name
-                self.ageGuessed.text = String(theResult.age) + " years old"
+                self.ageGuessed.text = String(theResult.age) + " years"
                 
                 self.userInput.text = ""
                 
